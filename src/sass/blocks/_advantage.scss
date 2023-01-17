@@ -1,0 +1,32 @@
+.advantage {
+  min-height: 590px;
+  padding: 55px 0 50px 0;
+  background-color: #f3f3f3;
+  &__wrapper {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 530px);
+    grid-template-rows: repeat(4, minmax(65px, auto));
+    grid-auto-rows: minmax(65px, auto);
+    justify-content: space-between;
+    row-gap: 25px;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    &-wrap {
+        margin-left: 20px;
+    }
+    &-icon {
+      align-self: start;
+      img {
+        width: 50px;
+      }
+    }
+    &-descr {
+      color: #3a3a3a;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}

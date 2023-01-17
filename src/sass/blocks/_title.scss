@@ -1,0 +1,35 @@
+.title {
+  font-weight: 700;
+  &_fs16 {
+    font-size: 16px;
+    color: $main-color;
+    margin-bottom: 0;
+  }
+  &_fs18 {
+    font-size: 18px;
+    color: $main-color;
+    margin-bottom: 0;
+  }
+  &_fs21 {
+    color: #2e2e2e;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+  }
+  &_fs26 {
+    color: #2e2e2e;
+    font-size: 26px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  &_fsw26 {
+    color: #ffffff;
+    font-size: 26px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
