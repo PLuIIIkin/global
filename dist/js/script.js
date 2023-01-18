@@ -17,3 +17,7 @@ wrap.forEach((cont) => {
     });
 })
 
+$(document).ready(function(){
+    $('.feedback__iner').slick({
+    });
+});
