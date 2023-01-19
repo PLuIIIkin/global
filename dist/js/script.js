@@ -17,3 +17,13 @@ wrap.forEach((cont) => {
   });
 });
 
+let offset = 0;
+const slider = document.querySelector('.feedback__iner-slider');
+
+document.querySelector('.feedback__btn').addEventListener('click', function() {
+    offset += 380;
+    if (offset > 1140) {
+        offset = 0;
+    }
+    slider.style.left = -offset +'px';
+})
