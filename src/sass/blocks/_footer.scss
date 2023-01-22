@@ -1,0 +1,75 @@
+.footer {
+  height: 200px;
+  padding: 25px 0 40px 0;
+  background-color: #25333c;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 96px 600px 340px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__icon {
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  &__title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  &__contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: repeat(2, 20px);
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 5px;
+  }
+  &__descr {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: end;
+  }
+  &__phone {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: end;
+  }
+  &__btn {
+    grid-row: 1/3;
+    grid-column: 2;
+  }
+  &__divider {
+    margin-top: 25px;
+    min-width: 1171px;
+    height: 1px;
+    opacity: 0.3;
+    background-color: #fff;
+  }
+  &__inform {
+    margin-top: 30px;
+    display: flex;
+  }
+  &__sait {
+    opacity: 0.6;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 17px;
+  }
+  &__police {
+    margin-left: 220px;
+    a {
+      color: $main-color;
+      text-decoration: underline;
+    }
+  }
+}

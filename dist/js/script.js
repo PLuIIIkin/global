@@ -18,7 +18,8 @@ wrap.forEach((cont) => {
 });
 
 let offset = 0;
-const slider = document.querySelector('.feedback__iner-slider');
+const slider = document.querySelector('.feedback__iner-slider'),
+      carusel = document.querySelector('.feedback__iner-carusel');
 
 document.querySelector('.feedback__btn').addEventListener('click', function() {
     offset += 380;
@@ -26,4 +27,10 @@ document.querySelector('.feedback__btn').addEventListener('click', function() {
         offset = 0;
     }
     slider.style.left = -offset +'px';
+    // if (offset = 0) {
+    //   carusel.classList.add('active');
+    // }
+    // if (offset > 379) {
+    //   carusel.classList.remove('active');
+    // }
 })

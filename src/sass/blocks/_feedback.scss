@@ -3,15 +3,11 @@
   padding: 50px 0 60px 0;
 
   &__iner {
-    margin-top: 40px;
-    width: 600px;
-    height: 250px;
+    width: 1400px;
+    margin: 40px auto 0 auto;
+
     &-slider {
       display: flex;
-      // align-items: center;
-      // justify-content: center;
-      width: 1140px;
-      height: 250px;
       position: relative;
     }
     &-carusel {
@@ -20,23 +16,45 @@
       justify-content: center;
       flex-direction: column;
       text-align: center;
-      margin: 0 auto;
+      margin: 60px auto;
+      // transform: scale(0.9);
+      opacity: 0.2;
+      transition: all 0.3s;
+      width: 360px;
+      height: 145px;
       img {
+        height: 60px;
         display: block;
         margin: 0 auto;
       }
-    }
-
-    &-title {
-      font-size: 18px;
-      font-weight: 700;
-    }
-
-    &-text {
-      color: #3a3a3a;
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 22px;
+      h5 {
+        font-size: 11px;
+        font-weight: 700;
+      }
+      p {
+        color: #3a3a3a;
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 12px;
+        margin-bottom: 0;
+      }
+      &-active {
+        margin: 0;
+        width: 600px;
+        height: 240px;
+        opacity: 1;
+        img {
+          width: 114px;
+          height: 114px;
+        }
+        h5 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
     }
   }
 }
